@@ -1,6 +1,92 @@
-$primary-color: #3498db;
+// Color Palette
+$lilac: #c8a2c8;
+$white: #ffffff;
+$lightPink: #ffb6c1;
+$bakedColor: #8b4513;
 
+// General Body Styling
 body {
-    background-color: $primary-color;
-    font-family: Arial, sans-serif;
+  background-color: $lilac;
+  color: $bakedColor;
+  font-family: Arial, sans-serif;
+}
+
+// Header Styling
+.header {
+  background-color: $lightPink;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    color: $bakedColor;
+    .fas {
+      color: $lilac;
+      &:hover {
+        color: $lightPink;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        display: inline;
+        margin: 0 10px;
+
+        a {
+          color: $bakedColor;
+          text-decoration: none;
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Gallery, Content, About Styling
+
+.cupcake-gallery {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+
+  .cupcake {
+    img {
+      width: 400px;
+      max-width: 100%;
+    }
+  }
+}
+.cupcake-gallery,
+.content,
+.about {
+  width: 100%;
+  background-color: $white;
+  padding: 20px;
+  margin: 20px;
+
+  h2 {
+    color: $bakedColor;
+  }
+
+  p {
+    color: $lightPink;
+  }
+}
+
+// Footer Styling
+.footer {
+  background-color: $lightPink;
+  padding: 10px;
+  text-align: center;
+
+  p {
+    color: $white;
+  }
 }

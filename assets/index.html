@@ -4,44 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      description="CupCake - webpage made as practice on scss"
+    />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>Learning Scss</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Learning Scss- Cupcake- webpage</title>
   </head>
   <body>
-    <header>
+    <header class="header">
+      <h1>
+        <i class="fa-solid fa-cupcake"></i> Delicious Cupcakes
+        <i class="fa-regular fa-cupcake"></i>
+      </h1>
+
       <nav>
         <ul>
-          <li>Menu</li>
-          <li>Content</li>
-          <li>About</li>
+          <li><a href="#cupcake-gallery">Menu</a></li>
+          <li><a href="#content">Content</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Awesome title</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo quis
-          dignissimos eaque. Nam ipsum quos iusto ullam culpa ab. Explicabo
-          mollitia tempora aperiam! Et tenetur odio natus rem officiis magnam.
-        </p>
+      <section class="cupcake-gallery">
+        <div class="cupcake">
+          <img src="img/chocolate.jpg" alt="Chocolate Cupcake" />
+          <h2>Chocolate Cupcake</h2>
+          <p>
+            Rich and indulgent chocolate cupcake with a creamy chocolate
+            frosting.
+          </p>
+          <h3>Recipe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            consequatur ipsum sunt rerum explicabo dolore architecto voluptatum
+            tenetur, accusamus totam placeat ratione! In beatae a sequi?
+            Voluptate asperiores obcaecati tempora.
+          </p>
+        </div>
+        <div class="cupcake">
+          <img src="img/vanilla.jpg" alt="Vanilla Cupcake" />
+          <h2>Vanilla Cupcake</h2>
+          <p>
+            Classic vanilla cupcake with a light and fluffy vanilla buttercream.
+          </p>
+          <h3>Recipe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            consequatur ipsum sunt rerum explicabo dolore architecto voluptatum
+            tenetur, accusamus totam placeat ratione! In beatae a sequi?
+            Voluptate asperiores obcaecati tempora.
+          </p>
+        </div>
+        <div class="cupcake">
+          <img src="img/red-velvet.jpg" alt="Red Velvet Cupcake" />
+          <h2>Red Velvet Cupcake</h2>
+          <p>
+            Decadent red velvet cupcake with a smooth cream cheese frosting.
+          </p>
+          <h3>Recipe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            consequatur ipsum sunt rerum explicabo dolore architecto voluptatum
+            tenetur, accusamus totam placeat ratione! In beatae a sequi?
+            Voluptate asperiores obcaecati tempora.
+          </p>
+        </div>
       </section>
-      <section>
-        <h2>Subtitle</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quasi
-          earum deserunt esse accusantium culpa incidunt ad dignissimos quis
-          fugit, a animi rerum natus officiis ullam necessitatibus adipisci
-          labore nisi.
-        </p>
+      <section id="content" class="content">
+        <h2>Welcome to our Cupcake Shop</h2>
+        <p>We provide the tastiest cupcakes in town!</p>
       </section>
-      <section>
-        <h2>Second Subtitle</h2>
+      <section id="about" class="about">
+        <h2>About Us</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
-          quibusdam culpa, odio ex soluta vitae aut? Natus veritatis rerum
-          autem! Nostrum voluptatem tempore amet perferendis itaque, aliquam
-          maxime non vel.
+          We are a family-owned business with a passion for baking. Our cupcakes
+          are baked with love and the finest ingredients.
         </p>
       </section>
     </main>
