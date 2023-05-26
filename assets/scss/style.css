@@ -4,32 +4,44 @@ body {
   font-family: Arial, sans-serif;
 }
 
+body main {
+  padding: 0;
+  margin: 0;
+}
+
 .header {
   background-color: #ffb6c1;
   padding: 20px;
   text-align: center;
 }
+
 .header h1 {
   color: #8b4513;
 }
+
 .header h1 .fas {
   color: #c8a2c8;
 }
+
 .header h1 .fas:hover {
   color: #ffb6c1;
 }
+
 .header nav ul {
   list-style-type: none;
   padding: 0;
 }
+
 .header nav ul li {
   display: inline;
   margin: 0 10px;
 }
+
 .header nav ul li a {
   color: #8b4513;
   text-decoration: none;
 }
+
 .header nav ul li a:hover {
   color: #ffffff;
 }
@@ -39,24 +51,29 @@ body {
   justify-content: center;
   flex: 1;
 }
+
 .cupcake-gallery .cupcake img {
   width: 400px;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .cupcake-gallery,
 .content,
 .about {
-  width: 95%;
   background-color: #ffffff;
-  padding: 20px;
-  margin: 20px;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .cupcake-gallery h2,
 .content h2,
 .about h2 {
   color: #8b4513;
 }
+
 .cupcake-gallery p,
 .content p,
 .about p {
@@ -68,8 +85,9 @@ body {
   padding: 10px;
   text-align: center;
 }
+
 .footer p {
   color: #ffffff;
-}
+} 
 
 /*# sourceMappingURL=style.css.map */
